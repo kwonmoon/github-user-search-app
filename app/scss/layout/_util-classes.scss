@@ -1,0 +1,29 @@
+@use "../util" as u;
+
+.wrapper {
+   max-width: u.rem(730);
+   // padding-inline: u.rem(165);
+   margin-inline: auto;
+   
+   @include u.breakpoint-down(medium) {
+      max-width: u.rem(573);
+      // padding-inline: u.rem(32);
+   }
+   
+   @include u.breakpoint-down(small) {
+      max-width: u.rem(327);
+      // padding-inline: u.rem(16);
+   }
+}
+
+.flex {
+   display: flex;
+}
+
+.grid {
+   display: grid;
+}
+
+.d-block {
+   display: block;
+}

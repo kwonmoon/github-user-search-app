@@ -1,0 +1,72 @@
+@use "../util" as u;
+
+.header {
+   justify-content: space-between;
+   align-items: center;
+   margin: u.rem(144) auto u.rem(36);
+
+   @include u.breakpoint-down(medium) {
+      margin-top: u.rem(140);
+   }
+
+   @include u.breakpoint-down(small) {
+      margin: u.rem(31) auto u.rem(36);
+   }
+
+   &__title {
+      font-size: u.rem(26);
+      font-weight: 700;
+      line-height: 1.4812;
+   }
+
+   &__button {
+      font-size: u.rem(13);
+      font-weight: 700;
+      line-height: 1.4808;
+      letter-spacing: u.rem(2.5);
+      text-transform: uppercase;
+      background-color: transparent;
+      gap: u.rem(16);
+      align-items: center;
+      
+      &__light {
+         color: hsl( var(--color-blue-gray) ) !important;
+
+         &:hover {
+            color: hsl( var(--color-dark-blue-gray) ) !important;
+         }
+            
+         & svg:hover path {
+            fill: hsl( var(--color-dark-blue-gray) ) !important;
+         }
+      }
+
+      &__dark {
+         color: hsl( var(--color-white) );
+         
+         &:hover {
+            color: hsl( var(--color-blue-gray) );
+         }
+
+         & svg:hover path {
+            fill: hsl( var(--color-blue-gray) );
+         }
+      }
+   }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+   .header {
+      &__button {
+         color: hsl( var(--color-white) );
+         
+         &:hover {
+            color: hsl( var(--color-blue-gray) );
+         }
+
+         & svg:hover path {
+            fill: hsl( var(--color-blue-gray) );
+         }
+      }
+   }
+}

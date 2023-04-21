@@ -1,0 +1,22 @@
+body {
+   background-color: hsl(var(--color-light-gray));
+   color: hsl(var(--color-dark-blue-gray));
+   font-family: var(--ff-mono);
+}
+   
+.body__dark {
+   background-color: hsl(var(--color-navy-blue));
+   color: hsl(var(--color-white));
+}
+
+.body__light {
+   background-color: hsl(var(--color-light-gray));
+   color: hsl(var(--color-dark-blue-gray));
+}
+
+@media screen and (prefers-color-scheme: dark) {
+   body {
+      background-color: hsl(var(--color-navy-blue));
+      color: hsl(var(--color-white));
+   }
+}
