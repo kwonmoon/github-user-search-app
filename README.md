@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/kwonmoon/github-user-search-app)
-- Live Site URL: [Add live site URL here]()
+- Live Site URL: [Add live site URL here](https://splendid-taiyaki-865a48.netlify.app/)
 
 ## My process
 
